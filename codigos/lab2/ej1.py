@@ -12,6 +12,7 @@ def rbisec(fun, I, err, mit):
     """
 
     # Asumimos que I es una lista con al menos 2 numeros
+    # I = [a, b]
     a = I[0]
     b = I[1]
 
@@ -47,7 +48,3 @@ def rbisec(fun, I, err, mit):
             a = c
 
     return hx, hf
-
-
-def raiz3(x):
-    return x**2 - 3
