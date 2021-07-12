@@ -1,3 +1,6 @@
+# b) Encontrar una aproximacion a √3 con un error menor a 10^−5.
+# Para esto, considere la funcion x → x^2 − 3 (que debe llamarse fun_lab2ej2b)
+
 # Importamos nuestra implementación de bisección
 from ej1 import rbisec
 

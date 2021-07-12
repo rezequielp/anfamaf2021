@@ -1,3 +1,15 @@
+# Escribir una funcion que implemente el metodo de biseccion para hallar una raız de
+# f : R → R en el intervalo [a, b]. La funcion debe llamarse “rbisec”, y tener como
+# entrada los argumentos (fun,I,err,mit), donde:
+#   fun es una funcion que dado x retorna f(x),
+#   I= [a, b] es un intervalo en R,
+#   err es la tolerancia deseada del error,
+#   mit es el numero maximo de iteraciones permitidas.
+# El algoritmo debe finalizar en la k-esima iteracion si |f(xk)| < err o si k ≥ mit.
+# Los argumentos de salida deben ser (hx,hf) donde
+#   hx= [x1, . . . , xN] es una lista que representa el historial de puntos medios
+#   hf= [f(x1), . . . , f(xN)] el historial de los respectivos valores funcionales.
+
 def rbisec(fun, I, err, mit):
     """
     Busca el cero de la función fun mediante el método de bisección.

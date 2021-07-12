@@ -1,3 +1,6 @@
+# c) Graficar conjuntamente f y los pares (xk, f(xk)) para las dos funciones anteriores y
+# con al menos dos intervalos iniciales distintos para cada una.
+
 # Importamos el módulo de gráficos de matplotlib
 import matplotlib.pyplot as plt
 from ej2a import *
