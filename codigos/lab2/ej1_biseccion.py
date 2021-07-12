@@ -51,7 +51,7 @@ def rbisec(fun, I, err, mit):
 
         # Chequear si estamos en un cero
         if abs(fun_c) < err:
-            print("Llegamos a un cero!")
+            #print("Llegamos a un cero!")
             break
 
         if fun_c * fun(a) < 0:

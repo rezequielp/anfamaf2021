@@ -5,7 +5,7 @@
 # hx, hy = rbisec(fun_lab2ej2a, [0.8, 1.4], 1e-5, 100)
 
 # Importamos nuestra implementación de bisección
-from ej1 import rbisec
+from ej1_biseccion import rbisec
 from math import tan
 
 

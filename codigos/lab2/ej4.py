@@ -3,20 +3,20 @@
 # x^3 − a = 0 con un error menor a 10^−6 mediante el uso de la funcion x → x3 − a
 import sys
 
-from ej3 import rnewton
+from ej3_netwon import rnewton
 from functools import partial
 
 
-def fun_ej4(x, a):
+def fun_lab2ej4(x, a):
     fx = (x ** 3) - a
     dfx = 3 * (x ** 2)
     return fx, dfx
 
 
 def resolver_ej4(aValued):
-    funEj4 = partial(fun_ej4, a=aValued)
-    # funEj4 = lambda x: fun_ej4(x, aValued)
-    hx, hf = rnewton(funEj4, 0.1, 1e-6, 200)
+    funej4 = partial(fun_lab2ej4, a=aValued)
+    # funej4 = lambda x: fun_ej4(x, aValued)
+    hx, hf = rnewton(funej4, 0.1, 1e-6, 200)
     # Imprimimos en pantalla el último valor de x
     print(f"Usando el método de Netwon, la aproximación a 3√{aValued} es {hx[-1]}")
 

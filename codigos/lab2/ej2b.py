@@ -2,7 +2,7 @@
 # Para esto, considere la funcion x → x^2 − 3 (que debe llamarse fun_lab2ej2b)
 
 # Importamos nuestra implementación de bisección
-from ej1 import rbisec
+from ej1_biseccion import rbisec
 
 
 def fun_lab2ej2b(x):
