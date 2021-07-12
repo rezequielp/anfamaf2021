@@ -12,12 +12,11 @@ from codigos.lab2.ej3_netwon import rnewton
 
 
 def fun_lab2ej9(x):
-    # 500 = 0.01328 * diametro^2 * (24*1000) ** 3
+    # 500 = 0.01328 * diametro^2 * (24/3.6) ** 3
     # 1 watt is equal to 1 newton meter/second.
     # 1 W = 1 N.s (newton-second)
     # 1 km/h = 1/3.6 m/s
-    return 0.01328 * x ** 2 * (24 / 3.6) ** 3
-
+    return 0.01328 * x ** 2 * 24**3 / 3.6 ** 3
 
 def fun_resolver_lab2ej9(x):
     fx = fun_lab2ej9(x) - 500
@@ -29,7 +28,7 @@ def main():
     # diametro = √(500 / (0.01328 * 24^3) = +-1.65032
     # diametro = math.sqrt(500 / (0.01328 * 24**3))
 
-    hx, hf = rnewton(fun_resolver_lab2ej9, 1.5, 1e-10, 100)
+    hx, hf = rnewton(fun_resolver_lab2ej9, 1, 1e-5, 100)
     x = hx[-1]
     print(f"Se generarán {fun_lab2ej9(x):0.0f} Watts con una vel de viento de 24km/h")
     print(f"Si el diametro del molino es de al menos {x:0.2f} metros")
