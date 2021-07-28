@@ -1,3 +1,9 @@
+# Dada la recta y = (3/4)x − 1/2, generar un conjunto de pares (xi, yi), i = 1, . . . , 20,
+# en el intervalo [0, 10], con dispersion normal en el eje y. Realizar un ajuste lineal
+# a los datos, obtener los coeficientes y dibujar el ajuste.
+# Investigar los comandos:
+# linspace, randm, polyval y polyfit, de la librerıa numpy
+
 import matplotlib.pyplot as plt
 import numpy as np
 

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # Leemos nuestro set de datos con Numpy
 # Lo que tenemos entre comillas va a depender de dónde tenemos descargados nuestros archivos
 # Recordar que, para Windows, las "\" deben reemplazarse por "\\"
-datos = np.loadtxt("datos/lab4/datos1a.dat")
+datos = np.loadtxt("../../datos/lab4/datos1a.dat")
 
 # Los datos vienen en dos columnas, podemos guardar la 1ra en "x" y la 2da en "y"
 x = datos[:, 0]
@@ -19,15 +19,18 @@ sum_xiyi = sum(x * y)
 
 # Hay que resolver el siguiente sistema lineal
 # [m      sum_xi ] [a0] = [ sum_yi ]
-# [sum_xi sum_xi2] [a1]   [sum_xiyi]
+# [sum_xi sum_xi^2] [a1]   [sum_yi*xi]
 
 # En el teórico tenemos las fórmulas para cada uno de los coeficientes de la recta.
+# Esta es la regla de Cramer: aj = det(Aj)/det(A)
 a0 = (sum_xi2 * sum_yi - sum_xiyi * sum_xi) / (m * sum_xi2 - sum_xi ** 2)
 a1 = (m * sum_xiyi - sum_xi * sum_yi) / (m * sum_xi2 - sum_xi ** 2)
+
 
 # Creamos una función que haga la evaluación de nuestra recta
 def eval_pol(x):
     return a1 * x + a0
+
 
 # Imprimimos en pantalla nuestros coeficientes
 print(a0, a1)
