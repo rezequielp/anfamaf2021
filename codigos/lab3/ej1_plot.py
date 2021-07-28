@@ -1,14 +1,14 @@
-from ej1 import *
+from ej1_ilagrange import *
 import matplotlib.pyplot as plt
 
-x = [-1,0,1]
-y = [0,-1,0]
+x = [-1, 0, 1]
+y = [0, -1, 0]
 
-h = 4/199
-z = [-2 + i*h for i in range(200)]
+h = 4 / 199
+z = [-2 + i * h for i in range(200)]
 
-w = ilagrange(x,y,z)
+w = ilagrange(x, y, z)
 
-plt.plot(z,w)
-plt.plot(x,y,'x')
+plt.plot(z, w)
+plt.plot(x, y, 'x')
 plt.show()

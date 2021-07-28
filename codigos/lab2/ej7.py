@@ -5,11 +5,12 @@
 # Los valores iniciales y tolerancias usadas por los distintos metodos deben ser escogidos de
 # manera que cualquier usuario pueda graficar u en el intervalo [0, 1.5] sin inconvenientes.
 
-from ej1_biseccion import rbisec
-from ej3_netwon import rnewton
-from ej5_puntoFijo import ripf
 import math
 from functools import partial
+
+from codigos.lab2.ej1_biseccion import rbisec
+from codigos.lab2.ej3_netwon import rnewton
+from codigos.lab2.ej5_puntoFijo import ripf
 
 
 def lab2ej7bisec(x):

@@ -1,3 +1,9 @@
+# Programar una funcion en python que evalue el polinomio interpolante p usando la forma
+# de Lagrange. La funcion debe llamarse “ilagrange” y tener como entrada (x, y, z) donde
+# x, y ∈ Rn son las coordenadas de los pares a interpolar (o sea p(x_i) = y_i, i = 1, . . . , n)
+# y z ∈ Rm son valores para evaluar p. La salida debe ser w ∈ Rm tal que wj = p(z_j),
+# j = 1, . . . , m
+
 def ilagrange(x, y, z):
     if len(x) != len(y):
         print("X e Y no tienen la misma longitud, chau")

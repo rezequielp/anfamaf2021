@@ -1,4 +1,4 @@
-from ej2 import *
+from ej2_inewton import *
 import matplotlib.pyplot as plt
 
 x = [-1,0,1]

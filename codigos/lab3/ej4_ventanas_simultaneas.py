@@ -1,4 +1,4 @@
-from ej2 import inewton
+from ej2_inewton import inewton
 from math import cos, pi
 import matplotlib.pyplot as plt
 
