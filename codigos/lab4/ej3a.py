@@ -3,7 +3,7 @@
 # a) y(x) = Cx^A,
 # b) y(x) = x /( Ax + B )
 # Ayuda: Transformar en cada caso la expresion dada a un modelo lineal, y obtener una recta que
-# mejor ajusta los datos (transformados) en el sentido de m´ınimos cuadrados.
+# mejor ajusta los datos (transformados) en el sentido de mınimos cuadrados.
 
 import numpy as np
 import matplotlib.pyplot as plt

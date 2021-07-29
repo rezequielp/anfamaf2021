@@ -48,6 +48,6 @@ for n in range(1, 16):
     axes[-1].plot(x_plot, q_plot, 'b')
     axes[-1].grid()
 
-fig.suptitle('Lab4 - Ejercicio 4', fontsize=12)
+fig.suptitle('Lab3 - Ejercicio 4', fontsize=12)
 fig.legend("fpq")
 plt.show()
